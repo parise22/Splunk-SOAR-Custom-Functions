@@ -1,0 +1,28 @@
+{
+    "create_time": "2022-05-06T03:14:17.660008+00:00",
+    "custom_function_id": "57e4084e016f81a5b3655aeb2fc2a265dd90a85b",
+    "description": "Custom function used to defang IP, URL and Domain addresses.",
+    "draft_mode": false,
+    "inputs": [
+        {
+            "contains_type": [
+                "*"
+            ],
+            "description": "The IP, URL or Domain to defang\n\nAdds square brackets to address to ensure it is not active. Typically used for IOCs.",
+            "input_type": "list",
+            "name": "input_asset",
+            "placeholder": ""
+        }
+    ],
+    "outputs": [
+        {
+            "contains_type": [
+                "*"
+            ],
+            "data_path": "output_asset",
+            "description": "The defanged asset"
+        }
+    ],
+    "platform_version": "5.1.0.70187",
+    "python_version": "3"
+}
